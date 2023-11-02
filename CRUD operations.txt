@@ -40,6 +40,7 @@ db.studentdata.find({active:true}).pretty().limit(1)
 UPDATE
 
 db.studentdata.updateOne({name:"Javascript"},{$set:{type:"FullStack"}})
+
 db.studentdata.find({name:"Javascript"}).pretty()
 
 db.studentdata.updateMany({type:"Front End"},{$set:{active:false}})
